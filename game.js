@@ -99,7 +99,6 @@ function drawScore() {
   ctx.fillText("HI:" + highScore.toString().padStart(4, '0'), canvas.width - 280, 50);
 }
 
-
 function update() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -166,6 +165,11 @@ document.addEventListener("keydown", (event) => {
   if (event.key === " ") {
     jump();
   }
+});
+
+canvas.addEventListener("touchstart", (event) => {
+  event.preventDefault();
+  jump();
 });
 
 update();
