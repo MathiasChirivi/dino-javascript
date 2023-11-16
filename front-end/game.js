@@ -13,7 +13,7 @@ const dino = {
   y: ground.y - 50,
   width: 50,
   height: 50,
-  speed: 10,
+  speed: 11,
   jumpPower: 10,
   isJumping: false,
 };
@@ -32,7 +32,7 @@ const obstacle = {
   y: ground.y - 50,
   width: 27,
   height: 50,
-  speed: 9,
+  speed: 11,
 };
 
 let score = 0;
